@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
+// "styled" - cria componente estilizado.
 export const Title = styled.h1`
   font-size: 48px;
   color: #3a3a3a;
   max-width: 450px;
-  line-height: 56px;
-
+  line-height: 56px; /*Espaço entre as linhas do texto*/
   margin-top: 80px;
 `;
 
@@ -14,18 +14,18 @@ export const Form = styled.form`
   margin-top: 40px;
   margin-width: 700px;
 
-  display: flex;
+  display: flex; /*Botão ficar ao lado do campo*/
 
   input {
-    flex: 1;
+    flex: 1; /*Input ocupa tudo do 700px, menos o botão.*/
     height: 70px;
     padding: 0 24px;
     border: 0;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px; /*Borda do conteúdo do input*/
     color: #3a3a3a;
 
     &::placeholder {
-      color:#a8a8b3;
+      color: #a8a8b3;
     }
   }
 
@@ -35,12 +35,14 @@ export const Form = styled.form`
     background: #04d361;
     border-radius: 0px 5px 5px 0px;
     border: 0;
-    color: #FFF;
+    color: #fff;
     font-weight: bold;
+    /*Trocar o background-color do botão devagar*/
     transition: background-color 0.2s;
 
     &:hover {
-      background: ${shade(0.2, '#04d361')}
+      /*& me refiro ao próprio elemento*/
+      background: ${shade(0.2, '#04d361')};
     }
   }
 `;
@@ -54,14 +56,16 @@ export const Repositories = styled.form`
     border-radius: 5px;
     width: 100%;
     padding: 24px;
-    display: block;
-    text-decoration: none;
+    display: block; /*"a" vem por padrão inline*/
+    text-decoration: none; /*Tirar underline por volta dos textos*/
 
-    display: flex;
+    display: flex; /*Um elemento ficar ao lado do outro*/
     align-items: center;
+    /*Velocidade de movimentação do hover*/
     transition: transform 0.2s;
 
     &:hover {
+      /*Distanciar o "a" no eixoX 10px*/
       transform: translateX(10px);
     }
 
@@ -72,13 +76,14 @@ export const Repositories = styled.form`
     img {
       width: 64px;
       height: 64px;
-      border-radius: 50%;
+      border-radius: 50%; /*deixar img arredondada*/
     }
 
-    div{
-      margin-left: 16px;
+    div {
+      margin: 0 16px;
+      flex: 1;
 
-      strong{
+      strong {
         font-size: 20px;
         color: #3d3d4d;
       }
@@ -90,8 +95,9 @@ export const Repositories = styled.form`
       }
     }
 
+    /*Pega a estilização da setinha e formata */
     svg {
-      margin-left:auto;
+      margin-left: auto; /*Pega espaço disponível na esquerda e coloca como margem.*/
       color: #cbcbd6;
     }
   }

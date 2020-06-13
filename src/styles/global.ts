@@ -2,7 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 
 import githubBackground from '../assets/github-background.svg';
 
+// CSS global da minha aplicação.
 export default createGlobalStyle`
+  /*Todos os elementos (*) tenham*/
   * {
     margin: 0;
     padding: 0;
@@ -11,10 +13,14 @@ export default createGlobalStyle`
   }
 
   body{
-    background: #F0F0F5 url(${githubBackground});
+    /*Cor de fundo e imagem*/
+    background: #F0F0F5 url(${githubBackground}) no-repeat 70% top;
+
+    /*Deixa as letras mais bem definidas*/
     -webkit-font-smoothing: antialiased;
   }
 
+  /*Fontes aplicadas nos três elementos abaixo*/
   body, input, button {
     font: 16px Roboto, sans-serif;
   }
@@ -25,6 +31,7 @@ export default createGlobalStyle`
     padding: 40px 20px;
   }
 
+  /*Passar o botão por cima de um botão e destacar*/
   button {
     cursor: pointer;
   }
