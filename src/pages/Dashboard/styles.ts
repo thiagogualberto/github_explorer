@@ -23,9 +23,9 @@ export const Form = styled.form<FormProps>`
   input {
     flex: 1; /*Input ocupa tudo do 700px, menos o botão.*/
     height: 70px;
-    padding: 0 24px;
+    padding: 0 24px; /*Só nas laterais*/
     border: 0;
-    border-radius: 5px 0 0 5px; /*Borda do conteúdo do input*/
+    border-radius: 5px 0 0 5px; /*Borda das laterais do conteúdo do input - SuperioreInferiorESQ*/
     color: #3a3a3a;
     border: 2px solid #fff;
     border-right: 0;
@@ -48,12 +48,14 @@ export const Form = styled.form<FormProps>`
     border-radius: 0px 5px 5px 0px;
     border: 0;
     color: #fff;
-    font-weight: bold;
+    font-weight: bold; /*Negrito*/
     /*Trocar o background-color do botão devagar*/
     transition: background-color 0.2s;
 
     &:hover {
-      /*& me refiro ao próprio elemento*/
+      /*& me refiro ao próprio elemento
+        Escurece o botão em 0.2
+      */
       background: ${shade(0.2, '#04d361')};
     }
   }
@@ -73,7 +75,7 @@ export const Repositories = styled.form`
     background: #fff;
     border-radius: 5px;
     width: 100%;
-    padding: 24px;
+    padding: 24px; /*Espaçamento interno*/
     display: block; /*"a" vem por padrão inline*/
     text-decoration: none; /*Tirar underline por volta dos textos*/
 
@@ -88,6 +90,7 @@ export const Repositories = styled.form`
     }
 
     & + a {
+      /*Aplicado do 2º 'a' pra frente*/
       margin-top: 16px;
     }
 
@@ -98,7 +101,7 @@ export const Repositories = styled.form`
     }
 
     div {
-      margin: 0 16px;
+      margin-left: 16px;
       flex: 1;
 
       strong {

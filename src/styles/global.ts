@@ -13,7 +13,10 @@ export default createGlobalStyle`
   }
 
   body{
-    /*Cor de fundo e imagem*/
+    /*Cor de fundo e imagem
+      no-repeat - a imagem não se repete no background.
+      70% alinhado pra direita e no topo da página.
+    */
     background: #F0F0F5 url(${githubBackground}) no-repeat 70% top;
 
     /*Deixa as letras mais bem definidas*/
@@ -27,8 +30,8 @@ export default createGlobalStyle`
 
   #root {
     max-width: 960px;
-    margin:0 auto;
-    padding: 40px 20px;
+    margin:0 auto; /*Centralizar*/
+    padding: 40px 20px; /*40_cima-embaixo e 20_dir-esq*/
   }
 
   /*Passar o botão por cima de um botão e destacar*/

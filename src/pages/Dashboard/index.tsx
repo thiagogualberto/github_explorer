@@ -1,6 +1,11 @@
+/**
+ * useState - Armazenar repositórios em algum lugar
+ * useEffect -
+ * FormEvent -
+ */
 import React, { useState, useEffect, FormEvent } from 'react';
 
-// TRabalhar com ícones. Flechinha de cada repo.
+// Trabalhar com ícones. Flechinha de cada repo.
 import { FiChevronRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
