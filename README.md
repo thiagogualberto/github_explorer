@@ -35,8 +35,9 @@
 </br>
 
 # :man_technologist: Project
+<p>
 The objective of this project was to practice some fundamentals of ReactJS. It was built with ReactJS + Typescript. Standardization of react projects, folder structure, stylization of react projects and consuming external APIs (Github API) were applied in this project.
-</br></br>
+</p>
 
 # :rocket: Getting Started
 ## :computer: Front-end
@@ -57,7 +58,7 @@ $ yarn
 # Everything ready to start the server
 $ yarn start
 ```
-Important: In the main screen, to search for a repository use the following format: "github_username/repository_name".
+<strong>Important:</strong> In the main screen, to search for a repository use the following format: "github_username/repository_name".
 </br></br>
 
 # :clipboard: Features
@@ -73,7 +74,6 @@ This project was developed with the following technologies:
 * [Babel](https://babeljs.io/)
 * [EditorConfig](https://editorconfig.org/)
 * [Eslint](https://eslint.org/)
-* [PostgreSQL](https://www.postgresql.org/)
 * [Prettier](https://prettier.io/)
 * [ReactJS](https://reactjs.org/)
 * [React Router DOM](https://reacttraining.com/react-router/)
