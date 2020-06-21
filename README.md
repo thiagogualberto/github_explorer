@@ -28,7 +28,7 @@
 </p>
 
 <p id="insomniaButton" align="center">
-  <img alt="Layout" src="https://res.cloudinary.com/eliasgcf/image/upload/v1586302738/assets/previewApp_fnt7hm.png">
+  <img alt="Layout" src=".github/github_explorer.gif">
 </p>
 
 </div>
